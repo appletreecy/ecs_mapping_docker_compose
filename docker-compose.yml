@@ -39,7 +39,9 @@ services:
     depends_on:
       - backend
     ports:
-      - "4173:80"
+      - "4173:4173"
+    environment:
+      - VITE_API_BASE_URL=http://192.168.1.59:8000/api
 
 volumes:
   mysql-data:
