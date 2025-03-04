@@ -34,7 +34,7 @@ services:
       - "8000:8000"
 
   frontend:
-    build: appletreecy/frontend:1.0
+    image: appletreecy/frontend:1.0
     restart: always
     depends_on:
       - backend
